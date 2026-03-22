@@ -1,0 +1,372 @@
+<!-- 
+    PERSONAL PORTFOLIO WEBSITE
+    Author: Narasimha Reddy
+    Project: AI & Data Science Student Portfolio
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narasimha Reddy | AI & Data Science Student</title>
+
+    <!-- FONTS: Inter for a clean, professional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS (using FontAwesome for standard icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar glass-nav">
+        <div class="container nav-container">
+            <a href="#" class="logo"><span class="dot">❤️❤️</span></a>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" style="display: none;">
+            <label for="menu-toggle" class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#volunteering">Volunteering</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 
+        1. HERO SECTION:
+        The first thing users see. It contains a high-level summary of who I am.
+    -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <span class="greeting">Hello, I'm</span>
+            <h1 class="hero-name">Narasimha Reddy</h1>
+            <h2 class="hero-title">AI & Data Science Student</h2>
+            <p class="hero-description reveal">
+                Building intelligent systems through Data Science and Machine Learning. 
+                Second-year AI & Data Science student with a focus on practical, impactful solutions.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+
+            <div class="scroll-indicator">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        2. ABOUT SECTION:
+        Provides a deeper narrative about my passion for technology and goals.
+    -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-heading reveal">About Me</h2>
+            <div class="about-content reveal">
+                <div class="about-text">
+                    <p>
+                        My passion for technology is driven by a curiosity for how data can transform industries and 
+                        improve lives. I enjoy breaking down complex problems and solving them through code, 
+                        whether it's building a ticketing system or analyzing vehicle safety simulations.
+                    </p>
+                    <p>
+                        I'm constantly learning—from deep learning architectures to the latest in data engineering—to 
+                        bridge the gap between theory and impactful software. My goal is to leverage my academic 
+                        foundation to create tools that make a difference.
+                    </p>
+                </div>
+                <!-- Line below was a developer note, now removed for clean viva code -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        3. EDUCATION SECTION:
+        Timeline showing academic milestones from Class X to B.Tech.
+    -->
+    <section id="education" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-heading reveal">Education</h2>
+            <div class="timeline">
+                <!-- B.Tech -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">Estimated 2028</span>
+                        <h3 class="degree">B.Tech in Artificial Intelligence & Data Science</h3>
+                        <h4 class="institute">Amrita Vishwa Vidyapeetham</h4>
+                    </div>
+                </div>
+                <!-- Intermediate -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">Completed 2024</span>
+                        <h3 class="degree">Intermediate (Class XII)</h3>
+                        <h4 class="institute">Sri Chaitanya Junior College</h4>
+                        <p class="grade">Percentage: 93%</p>
+                    </div>
+                </div>
+                <!-- Secondary -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">Completed 2022</span>
+                        <h3 class="degree">Secondary Education (Class X)</h3>
+                        <h4 class="institute">Bheeram Sreedhar Reddy Educational Institution</h4>
+                        <p class="grade">Percentage: 83%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        4. SKILLS SECTION:
+        Categorized technical stack including programming languages and tools.
+    -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-heading reveal">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category reveal">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <!-- Core Concepts -->
+                <div class="skill-category reveal">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Core Concepts</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Data Structures and Algorithms</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skill-category reveal">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>VS Code</span>
+                        <span>Jupyter Notebook</span>
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>Scikit-learn</span>
+                        <span>OpenCV</span>
+                        <span>MediaPipe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        5. PROJECTS SECTION:
+        Showcases key academic and personal projects with technical descriptions.
+    -->
+    <section id="projects" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-heading reveal">Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1: Skin Lesion -->
+                <div class="project-card reveal">
+                    <div class="card-body">
+                        <div class="card-top">
+                            <i class="fas fa-microscope project-icon"></i>
+                            <div class="status-tag">Ongoing</div>
+                        </div>
+                        <h3 class="project-title">Skin Lesion Classification</h3>
+                        <p class="project-desc">
+                            Developing a CNN-based model to classify skin lesion images using transfer learning. 
+                            Applying image preprocessing and data augmentation to improve model performance.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>PyTorch/TensorFlow</span>
+                            <span>CNN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Railway System -->
+                <div class="project-card reveal">
+                    <div class="card-body">
+                        <div class="card-top">
+                            <i class="fas fa-train project-icon"></i>
+                        </div>
+                        <h3 class="project-title">Railway Ticket Booking System</h3>
+                        <p class="project-desc">
+                            A Java-based system supporting booking, cancellation, and ticket generation. 
+                            Integrated database functionality to manage passenger and ticket information.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>GUI Components</span>
+                            <span>Database Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Car Crash -->
+                <div class="project-card reveal">
+                    <div class="card-body">
+                        <div class="card-top">
+                            <i class="fas fa-car-crash project-icon"></i>
+                            <div class="year-tag">2025</div>
+                        </div>
+                        <h3 class="project-title">Car Crash Analysis using ANSYS</h3>
+                        <p class="project-desc">
+                            Performed crash simulation to analyze vehicle structural deformation. 
+                            Conducted safety analysis using finite element simulation techniques.
+                        </p>
+                        <div class="tech-stack">
+                            <span>ANSYS</span>
+                            <span>Simulation</span>
+                            <span>FEA</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        6. CERTIFICATIONS SECTION:
+        List of completed courses and professional certifications.
+    -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-heading reveal">Certifications</h2>
+            <div class="achievements-list">
+                <div class="achievement-item reveal">
+                    <div class="ach-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="ach-content">
+                        <h3>The Ultimate Job Ready Data Science Course</h3>
+                        <span class="issuer">CodeWithHarry</span>
+                        <p>September 2025</p>
+                    </div>
+                </div>
+                <div class="achievement-item reveal">
+                    <div class="ach-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="ach-content">
+                        <h3>Intermediate Python</h3>
+                        <span class="issuer">DataCamp</span>
+                        <p>2026</p>
+                    </div>
+                </div>
+                <div class="achievement-item reveal">
+                    <div class="ach-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="ach-content">
+                        <h3>Deep Learning in Python</h3>
+                        <span class="issuer">DataCamp</span>
+                        <p>2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        7. VOLUNTEERING SECTION:
+        Highlights community service and event management experience.
+    -->
+    <section id="volunteering" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-heading reveal">Volunteering</h2>
+            <div class="volunteering-content reveal">
+                <div class="achievement-item">
+                    <div class="ach-icon"><i class="fas fa-hands-helping"></i></div>
+                    <div class="ach-content">
+                        <h3>Volunteer, Amritavarsham 72</h3>
+                        <span class="issuer">Amma's Birthday Seva</span>
+                        <p>Assisted in crowd management and event coordination during the celebration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        8. LANGUAGES SECTION:
+        Proficiency levels in native and professional languages.
+    -->
+    <section id="languages" class="section">
+        <div class="container">
+            <h2 class="section-heading reveal">Languages</h2>
+            <div class="languages-grid reveal">
+                <div class="language-item">
+                    <span class="lang-name">Telugu</span>
+                    <span class="lang-level">Native</span>
+                </div>
+                <div class="language-item">
+                    <span class="lang-name">English</span>
+                    <span class="lang-level">Professional</span>
+                </div>
+                <div class="language-item">
+                    <span class="lang-name">Hindi</span>
+                    <span class="lang-level">Basic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        9. CONTACT & FOOTER:
+        Call to action for communication and social links.
+    -->
+    <section id="contact" class="section footer-section">
+        <div class="container text-center reveal">
+            <h2 class="section-heading invert">Get In Touch</h2>
+            <p class="contact-text">
+                I'm currently looking for internships and research opportunities. Whether you have a question or just
+                want to say hi, I'll try my best to get back to you!
+            </p>
+            <a href="mailto:narasimhabusireddy018@gmail.com" class="btn primary big-btn">Say Hello</a>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 Narasimha Reddy. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
